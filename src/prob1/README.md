@@ -30,7 +30,7 @@ Replace Employee.equals(Employee e) with the following piece of code:
 
 ### Problem statement
 
-The program returns false because Employee class does not implement hashCode. Every time a new Employee is created, a different hashCode is generated even though they have the same attributes. In `List<Employee> removeDuplicates(List<Employee> employees)`, employee is used as hash key. Because `new Employee(String name, int salary)` creates a new hashCode every time, it is unable to properly create proper hash keys in the map. The result of this is removeDuplicates does not work properly.
+The program returns false because Employee class does not implement hashCode. Every time a new Employee is created, a different hashCode is generated even though they have the same attributes. In `List<Employee> removeDuplicates(List<Employee> employees)`, employee is used as hash key. Because `new Employee(String name, int salary)` creates a new hashCode every time, it is stored in a different the hashmap key everytime. The result of this is removeDuplicates does not work properly.
 
 
 ### Solution
