@@ -48,7 +48,7 @@ Implement hasCode method in Employee class. See below code:
 
 ### Problem Statement
 
-In Employee class, hashCode is implemented using name, salary and visited attribute. In EmployeeInfo.removeDuplicates, visited attribute is updated after the entry is put inside the hashMap. Changing this value resulted in different hashKey value. The result of this is that the entry is no longer recognized during HashMap.get(employee). This state of affairs causes removeDuplicates not to work properly.
+In Employee class, hashCode is implemented using name, salary and visited attribute. In EmployeeInfo.removeDuplicates, visited attribute is updated after the entry is put inside the hashMap. Changing this value resulted in different hashKey and that HashMap.get(employee) is no longer recognized for the same employee (even though name and salary are the same). This state of affairs causes removeDuplicates not to work properly.
 
 
 ### Solution
